@@ -32,7 +32,7 @@
                         </ul>
                         <div class="carousel-inner text-white rounded-custom">
                             <div class="carousel-item active">
-                                <div class="vh-100 d-flex align-items-end">
+                                <div class="vh-md-100 d-flex align-items-end">
                                     <div class="p-5 mb-5">
                                         <img src="images/logo-white.png" alt="logo" width="200" class="img-fluid">
                                         <h1 class="mt-3">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="vh-100 d-flex align-items-end">
+                                <div class="vh-md-100 d-flex align-items-end">
                                     <div class="p-5 mb-5">
                                         <img src="images/logo-white.png" alt="logo" width="200" class="img-fluid">
                                         <h1 class="mt-3">
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <div class="vh-100 d-flex align-items-end">
+                                <div class="vh-md-100 d-flex align-items-end">
                                     <div class="p-5 mb-5">
                                         <img src="images/logo-white.png" alt="logo" width="200" class="img-fluid">
                                         <h1 class="mt-3">
@@ -159,7 +159,80 @@
 
             <!-- BELOW FOLD -->
             <div class="row">
-                <div class="col-md-8 p-0">
+                <div class="col-md-4 text-center form-container mt-md-n5 shadow-custom order-md-2">
+                    <div class="sticky-top">
+                        <div class="px-5">
+                            <h3 class="pt-4 pb-3 font-weight-bold">
+                                Payment information
+                            </h3>
+                            <img src="images/visamaster.png" alt="accepted credit cards"
+                                class="img-fluid mx-auto d-block">
+                            <div class="mt-4">
+                                <div class="form-group">
+                                    <select name="cc_type" class="custom-select custom-select-sm" id="cc_type">
+                                        <option selected>Payment method</option>
+                                        <option value="Visa">Visa</option>
+                                        <option value="Mastercard">Mastercard</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-sm" id="cc_number"
+                                        placeholder="Credit Card #" name="cc_number">
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <select name="fields_expmonth" class="custom-select custom-select-sm"
+                                                id="fields_expmonth">
+                                                <option selected>Month</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select name="fields_expyear" class="custom-select custom-select-sm"
+                                                id="fields_expyear">
+                                                <option selected>Year</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-control-sm" id="cc_cvv"
+                                        placeholder="CVV" name="cc_cvv">
+                                </div>
+                            </div>
+                            <p class="text-muted small descriptor-info">
+                                Charges will appear on your statement as: 8337539231 wellness
+                            </p>
+                            <div class="form-group text-left">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="fields_agree"
+                                        name="fields_agree">
+                                    <label class="custom-control-label" for="fields_agree">
+                                        <small>
+                                            By clicking, I agree to the
+                                            <a href="#" class="terms-footer">
+                                                Terms and conditions
+                                            </a>
+                                            of the site.
+                                        </small>
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="p-3 terms bg-light border rounded mb-4">
+                                <small>
+                                    *Offer Details: You agree to be charged $19.90 monthly for
+                                    <span class="brand-name">Wellness Improving</span>
+                                    Subscription until you cancel by calling
+                                    <span class="cs-phone">833-753-9231</span>.
+                                </small>
+                            </p>
+                            <p class="pb-5">
+                                <a href="#" class="btn btn-block btn-primary" role="button">Send my order</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 p-0 order-md-1">
                     <div class="p-5">
                         <h3>
                             Why
@@ -322,79 +395,6 @@
                             </ul>
                         </div>
                     </footer>
-                </div>
-                <div class="col-md-4 text-center form-container mt-n5 shadow-custom">
-                    <div class="sticky-top">
-                        <div class="px-5">
-                            <h3 class="pt-4 pb-3 font-weight-bold">
-                                Payment information
-                            </h3>
-                            <img src="images/visamaster.png" alt="accepted credit cards"
-                                class="img-fluid mx-auto d-block">
-                            <div class="mt-4">
-                                <div class="form-group">
-                                    <select name="cc_type" class="custom-select custom-select-sm" id="cc_type">
-                                        <option selected>Payment method</option>
-                                        <option value="Visa">Visa</option>
-                                        <option value="Mastercard">Mastercard</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-sm" id="cc_number"
-                                        placeholder="Credit Card #" name="cc_number">
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <select name="fields_expmonth" class="custom-select custom-select-sm"
-                                                id="fields_expmonth">
-                                                <option selected>Month</option>
-                                            </select>
-                                        </div>
-                                        <div class="col">
-                                            <select name="fields_expyear" class="custom-select custom-select-sm"
-                                                id="fields_expyear">
-                                                <option selected>Year</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control form-control-sm" id="cc_cvv"
-                                        placeholder="CVV" name="cc_cvv">
-                                </div>
-                            </div>
-                            <p class="text-muted small descriptor-info">
-                                Charges will appear on your statement as: 8337539231 wellness
-                            </p>
-                            <div class="form-group text-left">
-                                <div class="custom-control custom-checkbox">
-                                    <input type="checkbox" class="custom-control-input" id="fields_agree"
-                                        name="fields_agree">
-                                    <label class="custom-control-label" for="fields_agree">
-                                        <small>
-                                            By clicking, I agree to the
-                                            <a href="#" class="terms-footer">
-                                                Terms and conditions
-                                            </a>
-                                            of the site.
-                                        </small>
-                                    </label>
-                                </div>
-                            </div>
-                            <p class="p-3 terms bg-light border rounded mb-4">
-                                <small>
-                                    *Offer Details: You agree to be charged $19.90 monthly for
-                                    <span class="brand-name">Wellness Improving</span>
-                                    Subscription until you cancel by calling
-                                    <span class="cs-phone">833-753-9231</span>.
-                                </small>
-                            </p>
-                            <p class="pb-5">
-                                <a href="#" class="btn btn-block btn-primary" role="button">Send my order</a>
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
