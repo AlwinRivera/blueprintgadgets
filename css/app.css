@@ -71,3 +71,9 @@ main {
 .shadow-custom {
     box-shadow: -16px 0 16px -15px rgba(0, 0, 0, .15);
 }
+
+@media only screen and (min-width: 768px) {
+    .vh-md-100 {
+        height: 100vh !important;
+    }
+}
