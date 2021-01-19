@@ -12,6 +12,10 @@ body {
     border-color: #007ba7 !important;
 }
 
+.shadow-custom {
+    box-shadow: -16px 0 16px -15px rgba(0, 0, 0, .15);
+}
+
 /* HEADINGS */
 h1,
 h3 {
@@ -68,8 +72,49 @@ main {
     font-size: 20px;
 }
 
-.shadow-custom {
-    box-shadow: -16px 0 16px -15px rgba(0, 0, 0, .15);
+
+/* LOADING SCREEN */
+.loading-screen {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+/* ANIMATION */
+.slideAnim,
+.slideTopFoldAnim {
+    visibility: hidden;
+}
+
+.slide-left {
+    animation-name: slide-left;
+    -webkit-animation-name: slide-left;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(70%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-left {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(70%);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+    }
 }
 
 @media only screen and (min-width: 768px) {
